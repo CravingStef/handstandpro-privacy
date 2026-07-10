@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Handstand Pro</title>
+<meta name="description" content="Politique de confidentialité de Handstand Pro : aucune donnée personnelle collectée, tout reste sur votre appareil.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --a1:#fb6f52; --a2:#e24699; --a3:#7a4de0;
+    --bg-1:#171226; --bg-2:#100c1a;
+    --ink:#f4f2f7; --ink-2:rgba(244,242,247,.66); --ink-3:rgba(244,242,247,.42);
+    --glass:rgba(255,255,255,.06); --edge:rgba(255,255,255,.14);
+    --shadow:0 20px 60px rgba(0,0,0,.45), 0 4px 14px rgba(0,0,0,.3);
+    --r:28px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg-1:#f4f1fa; --bg-2:#e9e4f4;
+      --ink:#241c33; --ink-2:rgba(36,28,51,.66); --ink-3:rgba(36,28,51,.42);
+      --glass:rgba(255,255,255,.6); --edge:rgba(255,255,255,.8);
+      --shadow:0 20px 60px rgba(80,50,120,.14), 0 4px 14px rgba(80,50,120,.08);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Outfit",-apple-system,system-ui,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,var(--bg-1) 0%,var(--bg-2) 100%);
+    min-height:100vh;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* aurora blobs */
+  body::before,body::after{
+    content:"";position:fixed;border-radius:50%;filter:blur(80px);z-index:0;pointer-events:none;opacity:.55;
+  }
+  body::before{width:460px;height:460px;top:-160px;right:-140px;background:radial-gradient(circle at 40% 40%,var(--a2),transparent 70%)}
+  body::after{width:520px;height:520px;bottom:-200px;left:-180px;background:radial-gradient(circle at 60% 40%,var(--a3),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:clamp(20px,5vw,56px) clamp(16px,4vw,28px)}
+  .card{
+    background:var(--glass);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    backdrop-filter:blur(18px) saturate(160%);
+    border:1px solid var(--edge);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    padding:clamp(24px,5vw,52px);
+  }
+  .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .brand{
+    font-family:"Unbounded",sans-serif;font-weight:800;letter-spacing:.02em;
+    font-size:14px;text-transform:uppercase;
+    background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .brand .dot{filter:none;-webkit-text-fill-color:initial}
+  .langs{display:inline-flex;gap:6px;background:var(--glass);border:1px solid var(--edge);border-radius:999px;padding:4px}
+  .langs button{
+    font-family:"Outfit",sans-serif;font-weight:600;font-size:13px;color:var(--ink-2);
+    background:transparent;border:0;border-radius:999px;padding:6px 14px;cursor:pointer;transition:.2s;
+  }
+  .langs button[aria-selected="true"]{
+    color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2));
+  }
+  h1{
+    font-family:"Unbounded",sans-serif;font-weight:800;
+    font-size:clamp(26px,5vw,38px);line-height:1.15;margin:.2em 0 .1em;
+  }
+  .updated{color:var(--ink-3);font-size:14px;margin:0 0 28px}
+  .lead{font-size:clamp(16px,2.4vw,18px);color:var(--ink);margin:0 0 8px}
+  h2{
+    font-family:"Unbounded",sans-serif;font-weight:600;
+    font-size:clamp(17px,2.6vw,20px);margin:34px 0 8px;
+  }
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong{color:var(--ink);font-weight:600}
+  a{color:var(--a2);text-decoration:none;border-bottom:1px solid transparent;transition:.2s}
+  a:hover{border-bottom-color:var(--a2)}
+  .callout{
+    margin:24px 0;padding:16px 20px;border-radius:18px;
+    background:linear-gradient(90deg,rgba(251,111,82,.12),rgba(226,70,153,.12),rgba(122,77,224,.12));
+    border:1px solid var(--edge);color:var(--ink);font-weight:500;
+  }
+  footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--edge);color:var(--ink-3);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  [data-lang]{display:none}
+  html[lang="fr"] [data-lang="fr"]{display:revert}
+  html[lang="en"] [data-lang="en"]{display:revert}
+  h1[data-lang],h2[data-lang]{display:none}
+  html[lang="fr"] h1[data-lang="fr"],html[lang="fr"] h2[data-lang="fr"]{display:block}
+  html[lang="en"] h1[data-lang="en"],html[lang="en"] h2[data-lang="en"]{display:block}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <span class="brand"><span class="dot">🤸</span> Handstand Pro</span>
+        <div class="langs" role="tablist" aria-label="Language">
+          <button role="tab" data-set-lang="fr" aria-selected="true">FR</button>
+          <button role="tab" data-set-lang="en" aria-selected="false">EN</button>
+        </div>
+      </div>
+
+      <!-- FR -->
+      <h1 data-lang="fr">Politique de confidentialité</h1>
+      <p class="updated" data-lang="fr">Dernière mise à jour : 10 juillet 2026</p>
+      <p class="lead" data-lang="fr">Handstand Pro est une application d'entraînement au handstand. Votre vie privée compte, et cette app est conçue pour en collecter le moins possible.</p>
+      <div class="callout" data-lang="fr">En résumé : Handstand Pro ne collecte aucune donnée personnelle.</div>
+      <h2 data-lang="fr">Les données que l'app ne collecte pas</h2>
+      <p data-lang="fr">Handstand Pro ne crée pas de compte, ne demande pas de connexion et ne vous identifie pas. L'app ne contient ni traceur, ni outil d'analyse, ni publicité. Elle n'envoie aucune donnée à un serveur : elle fonctionne entièrement sur votre iPhone, y compris hors ligne.</p>
+      <h2 data-lang="fr">Les données qui restent sur votre appareil</h2>
+      <p data-lang="fr">Votre progression (séances réalisées, séries de jours, meilleurs maintiens, badges, réponses au test de niveau) est enregistrée uniquement sur votre iPhone. Nous n'y avons pas accès. Ces données peuvent être incluses dans les sauvegardes chiffrées de votre appareil (iCloud ou ordinateur) selon vos propres réglages Apple. Si vous supprimez l'app, ces données sont effacées.</p>
+      <h2 data-lang="fr">Accès à la photothèque</h2>
+      <p data-lang="fr">Quand vous choisissez de partager une carte de résultat, l'app peut enregistrer une image dans votre photothèque. Cet accès sert uniquement à cet enregistrement, à votre demande. L'app ne lit pas et ne parcourt pas vos photos.</p>
+      <h2 data-lang="fr">Enfants</h2>
+      <p data-lang="fr">Handstand Pro s'adresse à un public général et ne cible pas les enfants. L'app ne collectant aucune donnée, elle n'en collecte pas non plus auprès des enfants.</p>
+      <h2 data-lang="fr">Modifications</h2>
+      <p data-lang="fr">Cette politique pourra évoluer si l'app change (par exemple à l'ajout d'un abonnement). La date en haut de page indique la dernière mise à jour.</p>
+      <h2 data-lang="fr">Contact</h2>
+      <p data-lang="fr">Une question sur cette politique ? Écrivez à <a class="contact" href="#">…</a>.</p>
+
+      <!-- EN -->
+      <h1 data-lang="en">Privacy Policy</h1>
+      <p class="updated" data-lang="en">Last updated: July 10, 2026</p>
+      <p class="lead" data-lang="en">Handstand Pro is a handstand training app. Your privacy matters, and this app is built to collect as little as possible.</p>
+      <div class="callout" data-lang="en">In short: Handstand Pro does not collect any personal data.</div>
+      <h2 data-lang="en">Data the app does not collect</h2>
+      <p data-lang="en">Handstand Pro has no account, no sign-in, and does not identify you. The app contains no trackers, no analytics, and no ads. It sends no data to any server: it runs entirely on your iPhone, including offline.</p>
+      <h2 data-lang="en">Data that stays on your device</h2>
+      <p data-lang="en">Your progress (completed sessions, day streaks, best holds, badges, level-test answers) is stored only on your iPhone. We have no access to it. This data may be included in your device's encrypted backups (iCloud or computer) according to your own Apple settings. If you delete the app, this data is removed.</p>
+      <h2 data-lang="en">Photo library access</h2>
+      <p data-lang="en">When you choose to share a result card, the app can save an image to your photo library. This access is used only for that save, at your request. The app does not read or browse your photos.</p>
+      <h2 data-lang="en">Children</h2>
+      <p data-lang="en">Handstand Pro is intended for a general audience and is not directed at children. Because the app collects no data, it collects none from children either.</p>
+      <h2 data-lang="en">Changes</h2>
+      <p data-lang="en">This policy may change if the app changes (for example when a subscription is added). The date at the top of this page shows the last update.</p>
+      <h2 data-lang="en">Contact</h2>
+      <p data-lang="en">Questions about this policy? Email <a class="contact" href="#">…</a>.</p>
+
+      <footer>
+        <span><a href="https://handstandpro.app">handstandpro.app</a></span>
+        <span>© 2026 Handstand Pro</span>
+      </footer>
+    </div>
+  </div>
+
+<script>
+  // ==== Replace with your real support email if different ====
+  var CONTACT_EMAIL = "hello@handstandpro.app";
+  document.querySelectorAll("a.contact").forEach(function(a){
+    a.href = "mailto:" + CONTACT_EMAIL;
+    a.textContent = CONTACT_EMAIL;
+  });
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-set-lang]").forEach(function(b){
+      b.setAttribute("aria-selected", b.dataset.setLang === l ? "true" : "false");
+    });
+    try{ localStorage.setItem("hs_lang", l); }catch(e){}
+  }
+  document.querySelectorAll("[data-set-lang]").forEach(function(b){
+    b.addEventListener("click", function(){ setLang(b.dataset.setLang); });
+  });
+  var saved = null;
+  try{ saved = localStorage.getItem("hs_lang"); }catch(e){}
+  setLang(saved || ((navigator.language||"fr").toLowerCase().indexOf("fr")===0 ? "fr" : "en"));
+</script>
+</body>
+</html>
