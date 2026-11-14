@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Handstand Pro</title>
+<meta name="description" content="Handstand Pro privacy policy: your progress stays on your device and, if iCloud sync is on, in your iCloud; the subscription and the first name you enter are processed through Apple and RevenueCat.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://privacy.handstandpro.app/en/">
+<link rel="alternate" hreflang="fr" href="https://privacy.handstandpro.app/fr/">
+<link rel="alternate" hreflang="en" href="https://privacy.handstandpro.app/en/">
+<link rel="alternate" hreflang="es" href="https://privacy.handstandpro.app/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://privacy.handstandpro.app/pt/">
+<link rel="alternate" hreflang="x-default" href="https://privacy.handstandpro.app/en/">
+<link rel="icon" href="/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --a1:#fb6f52; --a2:#e24699; --a3:#7a4de0;
+    --bg-1:#171226; --bg-2:#100c1a;
+    --ink:#f4f2f7; --ink-2:rgba(244,242,247,.66); --ink-3:rgba(244,242,247,.42);
+    --glass:rgba(255,255,255,.06); --edge:rgba(255,255,255,.14);
+    --shadow:0 20px 60px rgba(0,0,0,.45), 0 4px 14px rgba(0,0,0,.3);
+    --r:28px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg-1:#f4f1fa; --bg-2:#e9e4f4;
+      --ink:#241c33; --ink-2:rgba(36,28,51,.66); --ink-3:rgba(36,28,51,.42);
+      --glass:rgba(255,255,255,.6); --edge:rgba(255,255,255,.8);
+      --shadow:0 20px 60px rgba(80,50,120,.14), 0 4px 14px rgba(80,50,120,.08);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Outfit",-apple-system,system-ui,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,var(--bg-1) 0%,var(--bg-2) 100%);
+    min-height:100vh;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* aurora blobs */
+  body::before,body::after{
+    content:"";position:fixed;border-radius:50%;filter:blur(80px);z-index:0;pointer-events:none;opacity:.55;
+  }
+  body::before{width:460px;height:460px;top:-160px;right:-140px;background:radial-gradient(circle at 40% 40%,var(--a2),transparent 70%)}
+  body::after{width:520px;height:520px;bottom:-200px;left:-180px;background:radial-gradient(circle at 60% 40%,var(--a3),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:clamp(20px,5vw,56px) clamp(16px,4vw,28px)}
+  .card{
+    background:var(--glass);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    backdrop-filter:blur(18px) saturate(160%);
+    border:1px solid var(--edge);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    padding:clamp(24px,5vw,52px);
+  }
+  .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .brand{
+    font-family:"Unbounded",sans-serif;font-weight:800;letter-spacing:.02em;
+    font-size:14px;text-transform:uppercase;
+    background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .brand .logo{width:26px;height:26px;border-radius:7px;display:block;flex:0 0 auto}
+  .langs{display:inline-flex;gap:6px;background:var(--glass);border:1px solid var(--edge);border-radius:999px;padding:4px}
+  .langs a{
+    font-family:"Outfit",sans-serif;font-weight:600;font-size:13px;color:var(--ink-2);
+    background:transparent;border:0;border-radius:999px;padding:6px 14px;text-decoration:none;transition:.2s;
+  }
+  .langs a[aria-current="page"]{
+    color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2));
+  }
+  h1{
+    font-family:"Unbounded",sans-serif;font-weight:800;
+    font-size:clamp(26px,5vw,38px);line-height:1.15;margin:.2em 0 .1em;
+  }
+  .updated{color:var(--ink-3);font-size:14px;margin:0 0 28px}
+  .lead{font-size:clamp(16px,2.4vw,18px);color:var(--ink);margin:0 0 8px}
+  h2{
+    font-family:"Unbounded",sans-serif;font-weight:600;
+    font-size:clamp(17px,2.6vw,20px);margin:34px 0 8px;
+  }
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong{color:var(--ink);font-weight:600}
+  a{color:var(--a2);text-decoration:none;border-bottom:1px solid transparent;transition:.2s}
+  a:hover{border-bottom-color:var(--a2)}
+  .callout{
+    margin:24px 0;padding:16px 20px;border-radius:18px;
+    background:linear-gradient(90deg,rgba(251,111,82,.12),rgba(226,70,153,.12),rgba(122,77,224,.12));
+    border:1px solid var(--edge);color:var(--ink);font-weight:500;
+  }
+  footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--edge);color:var(--ink-3);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <span class="brand"><img class="logo" src="/logo.png" alt="" width="26" height="26"> Handstand Pro</span>
+        <nav class="langs" aria-label="Language">
+          <a href="/fr/" hreflang="fr" lang="fr">FR</a>
+          <a href="/en/" hreflang="en" lang="en" aria-current="page">EN</a>
+          <a href="/es/" hreflang="es" lang="es">ES</a>
+          <a href="/pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+        </nav>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: November 14, 2026</p>
+      <p class="lead">Handstand Pro is a handstand training app. Your privacy matters, and this app is built to collect only what's needed.</p>
+      <div class="callout">In short: your progress stays on your device and, if you keep iCloud sync on, in your own iCloud account, which we cannot access. When you subscribe, we process information related to that subscription and the first name you enter, through Apple and our subscription provider RevenueCat. We also measure a few anonymous usage statistics, and we receive a report when something fails inside the app. Finally, a second analytics tool, HeyCatch, may receive how you use the app and our websites: it is off by default in Europe, and in the app you can turn it off or on anytime in the settings. If you leave your email on one of our websites, it is kept in MailerLite to send you what you asked for.</div>
+      <h2>Your progress</h2>
+      <p>Your progress is stored on your iPhone: completed sessions, weeks where you kept your pledge, best holds per exercise, badges, level-test answers, chosen goal and frequency, sound and reminder settings. The time of your last session is kept there too, because that is what decides when a reminder is scheduled. We have access to none of it. This data may be included in your device's encrypted backups (iCloud or computer) according to your own Apple settings. If you delete the app, it is removed from the iPhone. If iCloud sync is on, the copy described below stays in your iCloud.</p>
+      <h2>iCloud sync</h2>
+      <p>So you can find your progress on your other iPhones signed in to the same Apple Account, the app copies it to your iCloud storage (iCloud key-value storage, on your Apple Account). The copy holds your path, levels, sessions, records, training days, badges, first name, goal and weekly pledge.</p>
+      <p>Nothing goes through our servers and we have no access to it: Apple stores this data, under the iCloud terms of your account.</p>
+      <p>Sync is on by default. You turn it off in the app's settings, Privacy card, “iCloud sync”. Once off, the app no longer sends or receives anything, and what is already in iCloud stays there. Resetting your progress in the settings also applies to your other devices.</p>
+      <p>The app's settings (voice, reminders, appearance) are not synced. Your subscription comes back on another device with “Restore Purchases”.</p>
+      <h2>Apple Health</h2>
+      <p>If you turn on “Apple Health” in the app's settings (from version 1.3), each session you finish is saved to the Health app on your iPhone as a gymnastics workout, with its start time and duration. Nothing else: no heart rate, no calories.</p>
+      <p>The app writes to Health and reads nothing from it. These workouts stay in Health, on your device and in your iCloud if you sync Health there. They do not go through our servers or our analytics tools.</p>
+      <p>The setting is off by default. You turn it off in the same place, or in the Health app, where you can also delete the workouts already saved.</p>
+      <h2>Reminders and timers</h2>
+      <p>If you turn them on, the app schedules training reminders and a signal for the end of a rest period. Those notifications are prepared and fired by iOS on your device, based on your past sessions and your weekly pledge. Nothing goes through a server, and we do not know whether a notification was shown or opened. The timer that appears on your Lock Screen during a session works the same way: it is computed on your device and transmits nothing.</p>
+      <h2>Subscription-related data</h2>
+      <p>Handstand Pro offers a paid subscription. To manage it, some data leaves your device:</p>
+      <ul>
+        <li>Purchase and subscription: whether you have an active trial or subscription, its type and transaction history. Payment is handled by Apple; we never see your payment details.</li>
+        <li>Subscription identifier: a random identifier generated by the app to link your subscription to your install. It contains neither your name nor your email.</li>
+        <li>First name or nickname: the one you enter in the app. We send it to our subscription provider so we can recognize you more easily in our management tool. You can change it anytime in the app's settings.</li>
+        <li>Technical data: device type, system version, country, sent automatically by the subscription service.</li>
+      </ul>
+      <p>This data is processed by Apple (payment, via the App Store) and by RevenueCat (subscription management on our behalf). See their policies: <a href="https://www.apple.com/legal/privacy/">Apple</a> and <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>. We use it only to provide the subscription, unlock paid features, help you if there's a problem, and track our overall sales metrics.</p>
+      <h2>Anonymous usage statistics</h2>
+      <p>To understand how the app is used and improve it, we measure a few usage events (for example: onboarding completed, subscription screen shown, session completed), along with technical data (device type, system version, language). These signals go through TelemetryDeck, a privacy-first analytics service hosted in the European Union. They are anonymized before being sent: the identifier used is irreversibly hashed, and no data that could identify you (name, email, content) is transmitted. These statistics are not linked to your identity and are never used for advertising or tracking. TelemetryDeck's policy: <a href="https://telemetrydeck.com/privacy/">telemetrydeck.com/privacy</a>.</p>
+      <h2>HeyCatch statistics</h2>
+      <p>On top of TelemetryDeck, the app can send how you use it to HeyCatch, an analytics service run by HeyCatch, Inc., a US company. It shows us where people come from and where in the app they stop.</p>
+      <p><strong>Who it applies to.</strong> If your App Store account is in the European Union, Iceland, Liechtenstein, Norway, the United Kingdom or Switzerland, HeyCatch is off. It only starts if you turn it on yourself: the app's Settings, Privacy card, "HeyCatch statistics". Everywhere else it is on from install, and the same switch turns it off. If the app can't tell your account's country, it behaves as in Europe.</p>
+      <p><strong>What is sent while it's on:</strong></p>
+      <ul>
+        <li>the screens you open and the steps you reach: onboarding completed, subscription screen shown, session completed with the skill-tree node you worked on, node mastered;</li>
+        <li>the app opening and going to the background;</li>
+        <li>a random install identifier kept on your iPhone;</li>
+        <li>your IP address, from which HeyCatch may derive an approximate location (country, city);</li>
+        <li>technical data: device model, system version, language, time zone, app version.</li>
+      </ul>
+      <p>Never sent: your first name, your email, or anything you type into the app.</p>
+      <p><strong>Where this data goes.</strong> It is processed in the United States by HeyCatch and its sub-processors, including PostHog, which stores the events. HeyCatch may also have it analyzed by AI models through OpenRouter, under rules that forbid those providers from training their models on it. HeyCatch acts on our behalf and does not sell this data. It is not certified under the Data Privacy Framework: transfers out of Europe rely on the European Commission's standard contractual clauses, built into its data processing agreement. Sub-processors: <a href="https://heycatch.ai/subprocessors">heycatch.ai/subprocessors</a>. HeyCatch's policy: <a href="https://heycatch.ai/privacy">heycatch.ai/privacy</a>.</p>
+      <p><strong>Legal basis.</strong> In Europe, your consent: you give it by turning the switch on and withdraw it by turning it off. Elsewhere, our legitimate interest in understanding how the app is used, which you can object to with the same switch.</p>
+      <p><strong>How long.</strong> For as long as we use HeyCatch. If we stop, HeyCatch deletes or anonymizes this data within two months.</p>
+      <p><strong>When you turn the switch off.</strong> The app stops sending and erases the install identifier from your iPhone. If you turn it back on later, you start with a new identifier, unconnected to the old one. Events already sent stay at HeyCatch under the old identifier: to have them deleted, email us.</p>
+      <h2>On our websites</h2>
+      <p>The <a href="https://handstandpro.app">handstandpro.app</a> and <a href="https://learn.handstandpro.app">learn.handstandpro.app</a> websites have no accounts and no ads. They load HeyCatch for visitors outside Europe, with the same rule as the app.</p>
+      <p><strong>How the site decides.</strong> It reads your browser's time zone, without sending anything to do so. If it's a European time zone, including the Canary Islands, the Azores, Madeira, Cyprus, the French overseas territories, Iceland and Svalbard, or if the time zone is unknown, HeyCatch doesn't load at all and nothing is stored in your browser. Everywhere else, it loads. A European traveling outside Europe is therefore measured like a local visitor.</p>
+      <p><strong>What is sent when it loads:</strong> pages viewed, clicks, the page you came from and the campaign parameters in the address, an identifier kept in your browser, your IP address and technical data (browser, device, language). Never the content of what you type.</p>
+      <p>The rest follows the app rules above: processing in the United States by HeyCatch and its sub-processors, legitimate interest as the legal basis, the same retention period. The site has no switch: a content blocker keeps HeyCatch from loading, and you can email us to have what was sent deleted.</p>
+      <h2>Email list and PDF guide</h2>
+      <p>When you give your email address on one of our websites, for example to receive a PDF guide, we keep it in MailerLite, the tool we use to send email.</p>
+      <p><strong>What we keep:</strong> your address, the date you signed up and confirmed, the language of the page and, when the page address contains them, the campaign parameters that say where you came from (for example a message on Instagram). MailerLite also records whether you open our emails, through an invisible image, and which links you click.</p>
+      <p><strong>What we do with it.</strong> Send you what you asked for, then a few emails about the method and about Handstand Pro. Your address is not sold, not shared, and not linked to how you use the app.</p>
+      <p><strong>Confirmation.</strong> After you sign up, you get a single email with a link to click. Without that click, nothing else is sent.</p>
+      <p><strong>Legal basis.</strong> Your consent. You withdraw it in one click with the unsubscribe link at the bottom of every email.</p>
+      <p><strong>Where this data goes.</strong> It is processed on our behalf by MailerLite Limited, an Irish company, and stored in the European Union. MailerLite's policy: <a href="https://www.mailerlite.com/legal/privacy-policy">mailerlite.com/legal/privacy-policy</a>.</p>
+      <p><strong>How long.</strong> As long as you stay subscribed. Once you unsubscribe, you receive nothing more. To have your address fully deleted, email us.</p>
+      <h2>Error reports</h2>
+      <p>When something fails inside the app, it tells us so we can fix it: a progress file that cannot be read, a purchase that fails, an exercise missing from the catalog, a demo video that will not play. The report contains an identifier for the failure, its category, the technical code returned by the system and, depending on the case, the name of one of our own fields or the id of an exercise in our catalog. It contains no free text, none of your progress data, and nothing you typed into the app. These reports go through TelemetryDeck and are anonymized like the statistics above.</p>
+      <h2>What we don't do</h2>
+      <p>No ads, no advertising trackers, no tracking of your activity across other apps or sites. We do not sell or rent your data.</p>
+      <h2>Photo library access</h2>
+      <p>When you choose to share a result card, the app can save an image to your photo library. This access is used only for that save, at your request. The app does not read or browse your photos.</p>
+      <h2>Your rights</h2>
+      <p>You can request access to your subscription data or your email address, or their deletion by emailing us. For HeyCatch, the switch in the settings is enough to stop collection, and we pass on any access or deletion request to HeyCatch. You can also lodge a complaint with your data protection authority (in France, the CNIL) if you believe we are not respecting your rights. Finally, you can manage or cancel your subscription anytime in your Apple account's subscription settings.</p>
+      <h2>Children</h2>
+      <p>Handstand Pro is intended for a general audience and is not directed at children.</p>
+      <h2>Changes</h2>
+      <p>This policy may change if the app changes. The date at the top of this page shows the last update.</p>
+      <h2>Contact</h2>
+      <p>Questions about this policy, or a request about your data? Email <a class="contact" href="#">…</a>.</p>
+
+      <footer>
+        <span><a href="https://handstandpro.app">handstandpro.app</a></span>
+        <span>© 2026 Handstand Pro</span>
+      </footer>
+    </div>
+  </div>
+
+<script>
+  // The address is written by script so that it is not harvested from the markup.
+  var CONTACT_EMAIL = "hello@handstandpro.app";
+  document.querySelectorAll("a.contact").forEach(function(a){
+    a.href = "mailto:" + CONTACT_EMAIL;
+    a.textContent = CONTACT_EMAIL;
+  });
+</script>
+</body>
+</html>

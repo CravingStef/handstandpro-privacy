@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité · Handstand Pro</title>
+<meta name="description" content="Politique de confidentialité de Handstand Pro : votre progression reste sur votre appareil et, si la synchro iCloud est active, dans votre iCloud ; l&#x27;abonnement et le prénom saisi sont traités via Apple et RevenueCat.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://privacy.handstandpro.app/fr/">
+<link rel="alternate" hreflang="fr" href="https://privacy.handstandpro.app/fr/">
+<link rel="alternate" hreflang="en" href="https://privacy.handstandpro.app/en/">
+<link rel="alternate" hreflang="es" href="https://privacy.handstandpro.app/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://privacy.handstandpro.app/pt/">
+<link rel="alternate" hreflang="x-default" href="https://privacy.handstandpro.app/en/">
+<link rel="icon" href="/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --a1:#fb6f52; --a2:#e24699; --a3:#7a4de0;
+    --bg-1:#171226; --bg-2:#100c1a;
+    --ink:#f4f2f7; --ink-2:rgba(244,242,247,.66); --ink-3:rgba(244,242,247,.42);
+    --glass:rgba(255,255,255,.06); --edge:rgba(255,255,255,.14);
+    --shadow:0 20px 60px rgba(0,0,0,.45), 0 4px 14px rgba(0,0,0,.3);
+    --r:28px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg-1:#f4f1fa; --bg-2:#e9e4f4;
+      --ink:#241c33; --ink-2:rgba(36,28,51,.66); --ink-3:rgba(36,28,51,.42);
+      --glass:rgba(255,255,255,.6); --edge:rgba(255,255,255,.8);
+      --shadow:0 20px 60px rgba(80,50,120,.14), 0 4px 14px rgba(80,50,120,.08);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Outfit",-apple-system,system-ui,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,var(--bg-1) 0%,var(--bg-2) 100%);
+    min-height:100vh;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* aurora blobs */
+  body::before,body::after{
+    content:"";position:fixed;border-radius:50%;filter:blur(80px);z-index:0;pointer-events:none;opacity:.55;
+  }
+  body::before{width:460px;height:460px;top:-160px;right:-140px;background:radial-gradient(circle at 40% 40%,var(--a2),transparent 70%)}
+  body::after{width:520px;height:520px;bottom:-200px;left:-180px;background:radial-gradient(circle at 60% 40%,var(--a3),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:clamp(20px,5vw,56px) clamp(16px,4vw,28px)}
+  .card{
+    background:var(--glass);
+    -webkit-backdrop-filter:blur(18px) saturate(160%);
+    backdrop-filter:blur(18px) saturate(160%);
+    border:1px solid var(--edge);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    padding:clamp(24px,5vw,52px);
+  }
+  .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .brand{
+    font-family:"Unbounded",sans-serif;font-weight:800;letter-spacing:.02em;
+    font-size:14px;text-transform:uppercase;
+    background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .brand .logo{width:26px;height:26px;border-radius:7px;display:block;flex:0 0 auto}
+  .langs{display:inline-flex;gap:6px;background:var(--glass);border:1px solid var(--edge);border-radius:999px;padding:4px}
+  .langs a{
+    font-family:"Outfit",sans-serif;font-weight:600;font-size:13px;color:var(--ink-2);
+    background:transparent;border:0;border-radius:999px;padding:6px 14px;text-decoration:none;transition:.2s;
+  }
+  .langs a[aria-current="page"]{
+    color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2));
+  }
+  h1{
+    font-family:"Unbounded",sans-serif;font-weight:800;
+    font-size:clamp(26px,5vw,38px);line-height:1.15;margin:.2em 0 .1em;
+  }
+  .updated{color:var(--ink-3);font-size:14px;margin:0 0 28px}
+  .lead{font-size:clamp(16px,2.4vw,18px);color:var(--ink);margin:0 0 8px}
+  h2{
+    font-family:"Unbounded",sans-serif;font-weight:600;
+    font-size:clamp(17px,2.6vw,20px);margin:34px 0 8px;
+  }
+  p{margin:0 0 14px;color:var(--ink-2)}
+  p strong{color:var(--ink);font-weight:600}
+  a{color:var(--a2);text-decoration:none;border-bottom:1px solid transparent;transition:.2s}
+  a:hover{border-bottom-color:var(--a2)}
+  .callout{
+    margin:24px 0;padding:16px 20px;border-radius:18px;
+    background:linear-gradient(90deg,rgba(251,111,82,.12),rgba(226,70,153,.12),rgba(122,77,224,.12));
+    border:1px solid var(--edge);color:var(--ink);font-weight:500;
+  }
+  footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--edge);color:var(--ink-3);font-size:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <span class="brand"><img class="logo" src="/logo.png" alt="" width="26" height="26"> Handstand Pro</span>
+        <nav class="langs" aria-label="Language">
+          <a href="/fr/" hreflang="fr" lang="fr" aria-current="page">FR</a>
+          <a href="/en/" hreflang="en" lang="en">EN</a>
+          <a href="/es/" hreflang="es" lang="es">ES</a>
+          <a href="/pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+        </nav>
+      </div>
+
+      <h1>Politique de confidentialité</h1>
+      <p class="updated">Dernière mise à jour : 14 novembre 2026</p>
+      <p class="lead">Handstand Pro est une application d'entraînement au handstand. Votre vie privée compte, et cette app est conçue pour collecter le strict nécessaire.</p>
+      <div class="callout">En résumé : votre progression reste sur votre appareil et, si vous gardez la synchro iCloud active, dans votre propre compte iCloud, auquel nous n'avons pas accès. Lorsque vous souscrivez un abonnement, nous traitons les informations liées à cet abonnement et le prénom que vous saisissez, via Apple et notre prestataire d'abonnement RevenueCat. Nous mesurons aussi quelques statistiques d'utilisation anonymes, et nous recevons un rapport quand l'app échoue quelque part. Enfin, un second outil de statistiques, HeyCatch, peut recevoir votre usage de l'app et de nos sites : il est coupé par défaut en Europe, et dans l'app vous le coupez ou l'activez quand vous voulez dans les réglages. Si vous nous laissez votre email sur un de nos sites, il est gardé dans MailerLite pour vous envoyer ce que vous avez demandé.</div>
+      <h2>Votre progression</h2>
+      <p>Votre progression est enregistrée sur votre iPhone : séances réalisées, semaines où votre engagement a été tenu, meilleurs maintiens par exercice, badges, réponses au test de niveau, objectif et fréquence choisis, réglages de son et de rappels. L'heure de votre dernière séance y est aussi conservée, parce que c'est elle qui décide du moment où un rappel est programmé. Nous n'avons accès à rien de tout cela. Ces données peuvent être incluses dans les sauvegardes chiffrées de votre appareil (iCloud ou ordinateur) selon vos propres réglages Apple. Si vous supprimez l'app, elles sont effacées de l'iPhone. Si la synchro iCloud est active, la copie décrite ci-dessous reste dans votre iCloud.</p>
+      <h2>Synchro iCloud</h2>
+      <p>Pour que vous retrouviez votre progression sur vos autres iPhone connectés au même compte Apple, l'app la copie dans votre stockage iCloud (le stockage clé-valeur d'iCloud, sur votre compte Apple). La copie contient votre parcours, vos niveaux, vos séances, vos records, vos jours d'entraînement, vos badges, votre prénom, votre objectif et votre pacte hebdomadaire.</p>
+      <p>Rien ne passe par nos serveurs et nous n'y avons pas accès : c'est Apple qui stocke ces données, selon les conditions iCloud de votre compte.</p>
+      <p>La synchro est active par défaut. Vous la coupez dans les réglages de l'app, carte Confidentialité, « Synchro iCloud ». Coupée, l'app n'envoie ni ne reçoit plus rien, et ce qui est déjà dans iCloud y reste. Une remise à zéro de votre progression dans les réglages s'applique aussi à vos autres appareils.</p>
+      <p>Les réglages de l'app (voix, rappels, apparence) ne sont pas synchronisés. Votre abonnement se retrouve sur un autre appareil avec « Restaurer les achats ».</p>
+      <h2>Apple Santé</h2>
+      <p>Si vous activez « Apple Santé » dans les réglages de l'app (à partir de la version 1.3), chaque séance terminée est enregistrée dans l'app Santé de votre iPhone comme entraînement de gymnastique, avec son heure de début et sa durée. Rien d'autre : ni fréquence cardiaque, ni calories.</p>
+      <p>L'app écrit dans Santé et n'y lit rien. Ces entraînements restent dans Santé, sur votre appareil et dans votre iCloud si vous y synchronisez Santé. Ils ne passent ni par nos serveurs ni par nos outils de statistiques.</p>
+      <p>Le réglage est éteint par défaut. Vous le coupez au même endroit, ou dans l'app Santé, où vous pouvez aussi supprimer les entraînements déjà enregistrés.</p>
+      <h2>Rappels et minuteurs</h2>
+      <p>Si vous les activez, l'app programme des rappels d'entraînement et un signal de fin de temps de repos. Ces notifications sont préparées et déclenchées par iOS sur votre appareil, à partir de vos séances passées et de votre engagement hebdomadaire. Rien ne passe par un serveur, et nous ne savons pas si une notification a été affichée ou ouverte. Le minuteur qui s'affiche sur votre écran verrouillé pendant une séance fonctionne pareil : il est calculé sur votre appareil et ne transmet rien.</p>
+      <h2>Les données liées à votre abonnement</h2>
+      <p>Handstand Pro propose un abonnement payant. Pour le gérer, certaines données quittent votre appareil :</p>
+      <ul>
+        <li>Achat et abonnement : le fait que vous ayez un essai ou un abonnement actif, son type et son historique de transactions. Le paiement est traité par Apple, nous ne voyons jamais vos coordonnées bancaires.</li>
+        <li>Identifiant d'abonnement : un identifiant aléatoire généré par l'app pour rattacher votre abonnement à votre installation. Il ne contient ni votre nom, ni votre email.</li>
+        <li>Prénom ou surnom : celui que vous saisissez dans l'app. Nous l'envoyons à notre prestataire d'abonnement pour vous reconnaître plus facilement dans notre outil de gestion. Vous pouvez le modifier à tout moment dans les réglages de l'app.</li>
+        <li>Données techniques : type d'appareil, version du système, pays, transmis automatiquement par le service d'abonnement.</li>
+      </ul>
+      <p>Ces données sont traitées par Apple (paiement, via l'App Store) et par RevenueCat (gestion des abonnements pour notre compte). Consultez leurs politiques : <a href="https://www.apple.com/legal/privacy/">Apple</a> et <a href="https://www.revenuecat.com/privacy/">RevenueCat</a>. Nous les utilisons uniquement pour fournir l'abonnement, débloquer les fonctionnalités payantes, vous aider en cas de problème et suivre nos statistiques globales de ventes.</p>
+      <h2>Statistiques d'utilisation anonymes</h2>
+      <p>Pour comprendre comment l'app est utilisée et l'améliorer, nous mesurons quelques événements d'usage (par exemple : accueil terminé, écran d'abonnement affiché, séance terminée), accompagnés de données techniques (type d'appareil, version du système, langue). Ces signaux passent par TelemetryDeck, un service d'analyse respectueux de la vie privée hébergé en Union européenne. Ils sont anonymisés avant l'envoi : l'identifiant utilisé est irréversiblement haché, et aucune donnée permettant de vous identifier (nom, email, contenu) n'est transmise. Ces statistiques ne sont pas reliées à votre identité et ne servent à aucun suivi publicitaire. Politique de TelemetryDeck : <a href="https://telemetrydeck.com/privacy/">telemetrydeck.com/privacy</a>.</p>
+      <h2>Statistiques HeyCatch</h2>
+      <p>En plus de TelemetryDeck, l'app peut envoyer votre usage à HeyCatch, un service d'analyse édité par HeyCatch, Inc., une société américaine. Il nous montre d'où viennent les gens et à quel endroit de l'app ils s'arrêtent.</p>
+      <p><strong>Qui est concerné.</strong> Si votre compte App Store est dans l'Union européenne, en Islande, au Liechtenstein, en Norvège, au Royaume-Uni ou en Suisse, HeyCatch est coupé. Il ne démarre que si vous l'activez vous-même : Réglages de l'app, carte Confidentialité, « Statistiques HeyCatch ». Partout ailleurs, il est actif dès l'installation, et le même interrupteur le coupe. Si l'app ne connaît pas le pays de votre compte, elle fait comme en Europe.</p>
+      <p><strong>Ce qui part quand il est actif :</strong></p>
+      <ul>
+        <li>les écrans que vous ouvrez et les étapes que vous franchissez : accueil terminé, écran d'abonnement affiché, séance terminée avec le nœud de l'arbre travaillé, nœud maîtrisé ;</li>
+        <li>l'ouverture de l'app et son passage en arrière-plan ;</li>
+        <li>un identifiant d'installation tiré au hasard et gardé sur votre iPhone ;</li>
+        <li>votre adresse IP, dont HeyCatch peut déduire une position approximative (pays, ville) ;</li>
+        <li>des données techniques : modèle d'appareil, version du système, langue, fuseau horaire, version de l'app.</li>
+      </ul>
+      <p>Ne partent jamais : votre prénom, votre email, ni rien de ce que vous tapez dans l'app.</p>
+      <p><strong>Où vont ces données.</strong> Elles sont traitées aux États-Unis, par HeyCatch et ses sous-traitants, dont PostHog qui stocke les événements. HeyCatch peut aussi les faire analyser par des modèles d'IA, via OpenRouter, sous des règles qui interdisent à ces fournisseurs de s'en servir pour entraîner leurs modèles. HeyCatch agit pour notre compte et ne vend pas ces données. Il n'est pas certifié Data Privacy Framework : le transfert hors d'Europe repose sur les clauses contractuelles types de la Commission européenne, intégrées à son contrat de sous-traitance. Sous-traitants : <a href="https://heycatch.ai/subprocessors">heycatch.ai/subprocessors</a>. Politique de HeyCatch : <a href="https://heycatch.ai/privacy">heycatch.ai/privacy</a>.</p>
+      <p><strong>Sur quelle base.</strong> En Europe, votre consentement : vous le donnez en activant l'interrupteur et vous le retirez en le coupant. Ailleurs, notre intérêt légitime à comprendre comment l'app est utilisée, auquel vous vous opposez avec le même interrupteur.</p>
+      <p><strong>Combien de temps.</strong> Tant que nous utilisons HeyCatch. Si nous arrêtons, HeyCatch efface ou anonymise ces données dans les deux mois.</p>
+      <p><strong>Quand vous coupez l'interrupteur.</strong> L'app arrête d'envoyer et efface l'identifiant d'installation de votre iPhone. Si vous le réactivez plus tard, vous repartez avec un nouvel identifiant, sans lien avec l'ancien. Les événements déjà envoyés restent chez HeyCatch sous l'ancien identifiant : pour les faire supprimer, écrivez-nous.</p>
+      <h2>Sur nos sites</h2>
+      <p>Les sites <a href="https://handstandpro.app">handstandpro.app</a> et <a href="https://learn.handstandpro.app">learn.handstandpro.app</a> n'ont ni compte, ni publicité. Ils chargent HeyCatch pour les visiteurs hors d'Europe, avec la même règle que l'app.</p>
+      <p><strong>Comment le site décide.</strong> Il lit le fuseau horaire de votre navigateur, sans rien envoyer pour cela. Si c'est un fuseau européen, Canaries, Açores, Madère, Chypre, outre-mer français, Islande et Svalbard compris, ou si le fuseau est inconnu, HeyCatch ne se charge pas du tout et rien n'est stocké dans votre navigateur. Partout ailleurs, il se charge. Un Européen en voyage hors d'Europe est donc mesuré comme un visiteur local.</p>
+      <p><strong>Ce qui part quand il est chargé :</strong> les pages vues, les clics, la page d'où vous venez et les paramètres de campagne de l'adresse, un identifiant gardé dans votre navigateur, votre adresse IP et des données techniques (navigateur, appareil, langue). Jamais le contenu de ce que vous tapez.</p>
+      <p>Le reste suit les règles de l'app décrites plus haut : traitement aux États-Unis par HeyCatch et ses sous-traitants, intérêt légitime comme base, même durée de conservation. Le site n'a pas d'interrupteur : un bloqueur de contenu empêche HeyCatch de se charger, et vous pouvez nous écrire pour faire supprimer ce qui a été envoyé.</p>
+      <h2>Liste email et guide PDF</h2>
+      <p>Quand vous donnez votre adresse email sur un de nos sites, par exemple pour recevoir un guide PDF, nous la gardons dans MailerLite, notre outil d'envoi d'emails.</p>
+      <p><strong>Ce que nous gardons :</strong> votre adresse, la date de votre inscription et de votre confirmation, la langue de la page et, quand l'adresse de la page en contient, les paramètres de campagne qui disent d'où vous venez (par exemple un message sur Instagram). MailerLite enregistre aussi si vous ouvrez nos emails, grâce à une image invisible, et les liens sur lesquels vous cliquez.</p>
+      <p><strong>Ce que nous en faisons.</strong> Vous envoyer ce que vous avez demandé, puis quelques emails sur la méthode et sur Handstand Pro. Votre adresse n'est ni vendue, ni partagée, ni reliée à votre usage de l'app.</p>
+      <p><strong>La confirmation.</strong> Après votre inscription, vous recevez un seul email, avec un lien à cliquer. Sans ce clic, rien d'autre ne part.</p>
+      <p><strong>Sur quelle base.</strong> Votre consentement. Vous le retirez en un clic avec le lien de désinscription qui se trouve en bas de chaque email.</p>
+      <p><strong>Où vont ces données.</strong> Elles sont traitées pour notre compte par MailerLite Limited, une société irlandaise, et stockées dans l'Union européenne. Politique de MailerLite : <a href="https://www.mailerlite.com/legal/privacy-policy">mailerlite.com/legal/privacy-policy</a>.</p>
+      <p><strong>Combien de temps.</strong> Tant que vous restez inscrit. Après une désinscription, vous ne recevez plus rien. Pour que votre adresse soit complètement effacée, écrivez-nous.</p>
+      <h2>Rapports d'erreur</h2>
+      <p>Quand quelque chose échoue dans l'app, elle nous le signale pour que nous puissions le corriger : un fichier de progression illisible, un achat qui échoue, un exercice introuvable dans le catalogue, une vidéo de démonstration qui ne se lit pas. Le rapport contient l'identifiant de la panne, sa catégorie, le code technique renvoyé par le système et, selon les cas, le nom d'un de nos propres champs ou l'identifiant d'un exercice de notre catalogue. Il ne contient aucun texte libre, aucune donnée de votre progression, et rien de ce que vous avez saisi dans l'app. Ces rapports passent par TelemetryDeck et sont anonymisés comme les statistiques ci-dessus.</p>
+      <h2>Ce que nous ne faisons pas</h2>
+      <p>Pas de publicité, pas de traceurs publicitaires, aucun suivi de votre activité dans d'autres apps ou sites. Nous ne vendons ni ne louons vos données.</p>
+      <h2>Accès à la photothèque</h2>
+      <p>Quand vous choisissez de partager une carte de résultat, l'app peut enregistrer une image dans votre photothèque. Cet accès sert uniquement à cet enregistrement, à votre demande. L'app ne lit pas et ne parcourt pas vos photos.</p>
+      <h2>Vos droits</h2>
+      <p>Vous pouvez demander l'accès à vos données d'abonnement ou à votre adresse email, ou leur suppression en nous écrivant. Pour HeyCatch, l'interrupteur des réglages suffit à arrêter la collecte, et nous transmettons à HeyCatch toute demande d'accès ou de suppression. Vous pouvez aussi saisir la CNIL si vous estimez que nous ne respectons pas vos droits. Vous pouvez enfin gérer ou résilier votre abonnement à tout moment dans les réglages d'abonnement de votre compte Apple.</p>
+      <h2>Enfants</h2>
+      <p>Handstand Pro s'adresse à un public général et ne cible pas les enfants.</p>
+      <h2>Modifications</h2>
+      <p>Cette politique pourra évoluer si l'app change. La date en haut de page indique la dernière mise à jour.</p>
+      <h2>Contact</h2>
+      <p>Une question sur cette politique, ou une demande concernant vos données ? Écrivez à <a class="contact" href="#">…</a>.</p>
+
+      <footer>
+        <span><a href="https://handstandpro.app">handstandpro.app</a></span>
+        <span>© 2026 Handstand Pro</span>
+      </footer>
+    </div>
+  </div>
+
+<script>
+  // The address is written by script so that it is not harvested from the markup.
+  var CONTACT_EMAIL = "hello@handstandpro.app";
+  document.querySelectorAll("a.contact").forEach(function(a){
+    a.href = "mailto:" + CONTACT_EMAIL;
+    a.textContent = CONTACT_EMAIL;
+  });
+</script>
+</body>
+</html>
